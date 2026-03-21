@@ -1,0 +1,1 @@
+# stp-playwright-app-template
