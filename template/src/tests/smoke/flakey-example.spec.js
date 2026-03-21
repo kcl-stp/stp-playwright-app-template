@@ -1,4 +1,5 @@
-const { test, expect } = require('@playwright/test');
+//const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 test.describe.configure({ retries: 2 });
 
 test('1-intentionally flaky test (PoC)', async () => {
