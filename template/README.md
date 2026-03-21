@@ -1,1 +1,1 @@
-
+# Template folder
