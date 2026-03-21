@@ -7,9 +7,10 @@
  * run from src
 *****************************************************************************/
 
-const { test, expect } = require('@playwright/test');
-const fs = require('fs');
-
+//const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
+//const fs = require('fs');
+import {fs} from 'fs';
 // Load and parse the JSON file
 const testData = JSON.parse(fs.readFileSync('./src/tests/smoke/envData.json', 'utf-8'));
 
