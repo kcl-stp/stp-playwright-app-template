@@ -1,0 +1,18 @@
+<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="15.028661999993027">
+<testsuite name="smoke\url-tests.spec.js" timestamp="2026-03-25T21:09:49.336Z" hostname="chromium" tests="7" failures="0" skipped="0" time="10.659" errors="0">
+<testcase name="@dev Ping test for active URL: https://emcuat.crm4.dynamics.com/" classname="smoke\url-tests.spec.js" time="3.516">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://testproject.crm4.dynamics.com" classname="smoke\url-tests.spec.js" time="0.855">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://uatproject.crm4.dynamics.com" classname="smoke\url-tests.spec.js" time="0.688">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://emcsandbox2.crm4.dynamics.com/main.aspx" classname="smoke\url-tests.spec.js" time="1.079">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://keatsdev.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="2.325">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://keatsuat.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="1.206">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://keats.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="0.99">
+</testcase>
+</testsuite>
+</testsuites>

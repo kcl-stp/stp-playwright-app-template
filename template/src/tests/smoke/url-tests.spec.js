@@ -10,10 +10,11 @@
 //const { test, expect } = require('@playwright/test');
 import { test, expect } from '@playwright/test';
 //const fs = require('fs');
-import {fs} from 'fs';
+import fs from 'fs';
 // Load and parse the JSON file
-const testData = JSON.parse(fs.readFileSync('./src/tests/smoke/envData.json', 'utf-8'));
-
+const testData = JSON.parse(
+  fs.readFileSync(new URL('./envData.json', import.meta.url), 'utf-8')
+);
 // Filter for active URLs
 const activeUrls = testData.filter(urlData => urlData.status === 'active');
 

@@ -1,0 +1,14 @@
+[
+  {"envgroup": "crm", "url": "https://emcuat.crm4.dynamics.com/", "status": "active"},
+  {"envgroup": "crm", "url": "https://testproject.crm4.dynamics.com", "status": "active"},
+  {"envgroup": "crm", "url": "https://uatproject.crm4.dynamics.com", "status": "active"},
+  {"envgroup": "crm", "url": "https://emcsandbox2.crm4.dynamics.com/main.aspx", "status": "active"},
+  {"envgroup": "crm", "url": "https://testdatamigration.crm4.dynamics.com/", "status": "inactive"},
+  {"envgroup": "crm", "url": "https://testdatamigrationmaudsley.crm4.dynamics.com/", "status": "inactive"},
+  {"envgroup": "crm", "url": "https://devdatamigration.crm4.dynamics.com/", "status": "inactive"},
+  {"envgroup": "keats", "url": "https://keatsdev.kcl.ac.uk/", "status": "active"},
+  {"envgroup": "keats", "url": "https://keatsuat.kcl.ac.uk/", "status": "active"},
+  {"envgroup": "keats", "url": "https://kcl-vle-dev.kcl.cdl.cosector.com/", "status": "inactive"},
+  {"envgroup": "keats", "url": "https://keats.kcl.ac.uk/", "status": "active"},
+  {"envgroup": "keats", "url": "https://moodle-uat.learninghub.healthpartners.org", "status": "inactive"}
+]
