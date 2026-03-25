@@ -1,18 +1,98 @@
-<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="15.028661999993027">
-<testsuite name="smoke\url-tests.spec.js" timestamp="2026-03-25T21:09:49.336Z" hostname="chromium" tests="7" failures="0" skipped="0" time="10.659" errors="0">
-<testcase name="@dev Ping test for active URL: https://emcuat.crm4.dynamics.com/" classname="smoke\url-tests.spec.js" time="3.516">
+<testsuites id="" name="" tests="17" failures="1" skipped="0" errors="0" time="40.044866999999996">
+<testsuite name="e2e\saucedemo-login.spec.js" timestamp="2026-03-25T21:16:10.991Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.771" errors="0">
+<testcase name="Saucedemo login works" classname="e2e\saucedemo-login.spec.js" time="9.771">
 </testcase>
-<testcase name="@dev Ping test for active URL: https://testproject.crm4.dynamics.com" classname="smoke\url-tests.spec.js" time="0.855">
+</testsuite>
+<testsuite name="smoke\flakey-example.spec.js" timestamp="2026-03-25T21:16:10.991Z" hostname="chromium" tests="4" failures="1" skipped="0" time="7.659" errors="0">
+<testcase name="1-intentionally flaky test (PoC)" classname="smoke\flakey-example.spec.js" time="0.007">
+<failure message="flakey-example.spec.js:6:1 1-intentionally flaky test (PoC)" type="FAILURE">
+<![CDATA[  [chromium] › smoke\flakey-example.spec.js:6:1 › 1-intentionally flaky test (PoC) ─────────────────
+
+    Error: Random flake for PoC
+
+       5 | test('1-intentionally flaky test (PoC)', async () => {
+       6 |   if (Math.random() < 0.5) {
+    >  7 |     throw new Error('Random flake for PoC');
+         |           ^
+       8 |   }
+       9 | });
+      10 |
+        at C:\Users\k2261098\github\kcl-stp\stp-playwright-app-template\template\src\tests\smoke\flakey-example.spec.js:7:11
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Random flake for PoC
+
+       5 | test('1-intentionally flaky test (PoC)', async () => {
+       6 |   if (Math.random() < 0.5) {
+    >  7 |     throw new Error('Random flake for PoC');
+         |           ^
+       8 |   }
+       9 | });
+      10 |
+        at C:\Users\k2261098\github\kcl-stp\stp-playwright-app-template\template\src\tests\smoke\flakey-example.spec.js:7:11
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Random flake for PoC
+
+       5 | test('1-intentionally flaky test (PoC)', async () => {
+       6 |   if (Math.random() < 0.5) {
+    >  7 |     throw new Error('Random flake for PoC');
+         |           ^
+       8 |   }
+       9 | });
+      10 |
+        at C:\Users\k2261098\github\kcl-stp\stp-playwright-app-template\template\src\tests\smoke\flakey-example.spec.js:7:11
+]]>
+</failure>
 </testcase>
-<testcase name="@dev Ping test for active URL: https://uatproject.crm4.dynamics.com" classname="smoke\url-tests.spec.js" time="0.688">
+<testcase name="2-tight timeout flake (PoC)" classname="smoke\flakey-example.spec.js" time="5.634">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|smoke-flakey-example-2-tight-timeout-flake-PoC--chromium\test-failed-1.png]]
+
+[[ATTACHMENT|smoke-flakey-example-2-tight-timeout-flake-PoC--chromium\error-context.md]]
+
+[[ATTACHMENT|smoke-flakey-example-2-tight-timeout-flake-PoC--chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|smoke-flakey-example-2-tight-timeout-flake-PoC--chromium-retry1\error-context.md]]
+]]>
+</system-out>
 </testcase>
-<testcase name="@dev Ping test for active URL: https://emcsandbox2.crm4.dynamics.com/main.aspx" classname="smoke\url-tests.spec.js" time="1.079">
+<testcase name="3-retry-based flake (PoC)" classname="smoke\flakey-example.spec.js" time="0.011">
 </testcase>
-<testcase name="@dev Ping test for active URL: https://keatsdev.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="2.325">
+<testcase name="4-intentionally slow test (PoC)" classname="smoke\flakey-example.spec.js" time="2.007">
 </testcase>
-<testcase name="@dev Ping test for active URL: https://keatsuat.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="1.206">
+</testsuite>
+<testsuite name="smoke\healthcheck.spec.js" timestamp="2026-03-25T21:16:10.991Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.001" errors="0">
+<testcase name="@dev @test @prod Healthcheck: add 2 numbers" classname="smoke\healthcheck.spec.js" time="0.001">
 </testcase>
-<testcase name="@dev Ping test for active URL: https://keats.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="0.99">
+</testsuite>
+<testsuite name="smoke\url-tests.spec.js" timestamp="2026-03-25T21:16:10.991Z" hostname="chromium" tests="7" failures="0" skipped="0" time="7.014" errors="0">
+<testcase name="@dev Ping test for active URL: https://emcuat.crm4.dynamics.com/" classname="smoke\url-tests.spec.js" time="0.935">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://testproject.crm4.dynamics.com" classname="smoke\url-tests.spec.js" time="0.955">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://uatproject.crm4.dynamics.com" classname="smoke\url-tests.spec.js" time="0.495">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://emcsandbox2.crm4.dynamics.com/main.aspx" classname="smoke\url-tests.spec.js" time="0.859">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://keatsdev.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="2.313">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://keatsuat.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="0.629">
+</testcase>
+<testcase name="@dev Ping test for active URL: https://keats.kcl.ac.uk/" classname="smoke\url-tests.spec.js" time="0.828">
+</testcase>
+</testsuite>
+<testsuite name="validation\flaky-example.spec.js" timestamp="2026-03-25T21:16:10.991Z" hostname="chromium" tests="4" failures="0" skipped="0" time="2.629" errors="0">
+<testcase name="1-intentionally flaky test (PoC)" classname="validation\flaky-example.spec.js" time="0.001">
+</testcase>
+<testcase name="2-tight timeout flake (PoC)" classname="validation\flaky-example.spec.js" time="0.614">
+</testcase>
+<testcase name="3-retry-based flake (PoC)" classname="validation\flaky-example.spec.js" time="0.01">
+</testcase>
+<testcase name="4-intentionally slow test (PoC)" classname="validation\flaky-example.spec.js" time="2.004">
 </testcase>
 </testsuite>
 </testsuites>
