@@ -3,23 +3,23 @@
 Use the following guides to get started and work with the STP Playwright App Starter Pack:
 
 ### 🚀 Getting Started
-- 👉 [Setup Runbook](./template/docs/setup-runbook.md)  
+- 👉 [Setup Runbook](./docs/setup-runbook.md)  
   Step-by-step setup and validation checklist
 
 ### 🤖 Setup Runbook
-- 👉 [Starter Pack](./template/docs/starter-pack-readme.md)  
+- 👉 [Starter Pack](./docs/starter-pack-readme.md)  
   Step-by-step setup and validation checklist
 
 ### ▶️ Running Tests
-- 👉 [Running Tests Guide](./template/docs/running-tests.md)  
+- 👉 [Running Tests Guide](./docs/running-tests.md)  
   Quick reference for executing Playwright tests locally and debugging
 
 ### 🔁 Pipelines
-- 👉 [Pipelines Guide](./template/docs/pipelines.md)  
+- 👉 [Pipelines Guide](./docs/pipelines.md)  
   Overview of GitHub + Azure DevOps pipeline architecture and execution flow
 
 ### 🧩 Coding Standards
-- 👉 [Coding Standards](./template/docs/coding-standards.md)  
+- 👉 [Coding Standards](./docs/coding-standards.md)  
   Guidelines for writing clean, consistent, and maintainable test code
 
 ---
