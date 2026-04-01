@@ -1,6 +1,33 @@
-## 📚 Documentation
+# 🤖 STP Playwright App - Getting Started
 
+## 🚀 Quick Start (2 mins)
+
+```bash
+npm install
+npx playwright install
+npm run test:smoke
+```
+👉 Installs dependencies, browsers, and runs a smoke test
+
+---
+
+📂 Project Structure (high level)
+  - src/tests/e2e — end-to-end tests
+  - src/tests/smoke — smoke tests
+  - src/pages — page objects
+  - src/tests/test-data — test data
+
+---
+
+📊 Reports
+  - HTML / Smart Report generated after test run
+  - JUnit output available for pipelines
+
+---
+
+```
 Use the following guides to get started and work with the STP Playwright App Starter Pack:
+```
 
 ### 🚀 Getting Started
 - 👉 [Setup Runbook](./docs/setup-runbook.md)  
