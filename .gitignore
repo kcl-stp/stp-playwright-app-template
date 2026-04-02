@@ -142,3 +142,6 @@ vite.config.ts.timestamp-*
 template/test-results
 template/test-results/results.*
 
+# local temp files
+stash
+stash/*
