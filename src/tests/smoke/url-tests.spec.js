@@ -20,7 +20,7 @@ const activeUrls = testData.filter(urlData => urlData.status === 'active');
 
 // Dynamically create tests for active URLs
 activeUrls.forEach((urlData) => {
-  test(`@dev Ping test for active URL: ${urlData.url}`, async ({ page }) => {
+  test(`@dev @smoke test for active URL: ${urlData.url}`, async ({ page }) => {
     const response = await page.goto(urlData.url);
     // Assert the response status is 200 (OK)
     expect(response.ok()).toBeTruthy();
