@@ -14,9 +14,16 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "npx playwright test",
-    "test:smoke": "npx playwright test src/tests/smoke",
-    "test:demo": "npx playwright test src/tests/demo"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "playwright test",
+    "test:smoke": "playwright test src/tests/smoke",
+    "test:e2e": "playwright test src/tests/e2e",
+    "test:validation": "playwright test src/tests/stp-validation",
+    "test:pr": "playwright test --grep @smoke --reporter=line",
+    "test:ci": "playwright test",
+    "stp:init": "bash scripts/init-starter-pack.sh",
+    "test:smart": "playwright test --config=playwright.smart.config.js"
   },
   "dependencies": {
     "playwright": "^1.57.0"
