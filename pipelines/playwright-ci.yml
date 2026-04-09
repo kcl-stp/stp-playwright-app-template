@@ -1,1 +1,33 @@
-needs populating
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- checkout: self
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20.x'
+
+- script: npm ci
+  displayName: "Install dependencies"
+
+- script: npx playwright install --with-deps
+  displayName: "Install Playwright"
+
+- script: npm run test:smoke
+  displayName: "Run smoke tests"
+
+- task: PublishTestResults@2
+  condition: always()
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'test-results/**/*.xml'
+
+- task: PublishBuildArtifacts@1
+  condition: always()
+  inputs:
+    pathToPublish: 'playwright-report'
+    artifactName: 'playwright-report'
