@@ -1,4 +1,4 @@
-# 🧩 STP Coding Standards (Playwright)
+# 🧩 Coding Standards (Playwright)
 
 ## 📌 Purpose
 
