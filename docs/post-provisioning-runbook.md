@@ -123,13 +123,39 @@ add-ins will include:
 
 There are also utilities that can be used for various use cases:
 
-| Utility                        | Purpose                |
-| ------------------------------ | ---------------------- |
-| playwright-pr.yml              | PR validation          |
-| playwright-ci.yml              | CI execution           |
-| playwright-scheduled.yml       | Scheduled regression   |
-| playwright-smart-report-v2.yml | Smart Report execution |
+| Utility                        | Purpose                             |
+| ------------------------------ | ----------------------------------- |
+| cypress-to-playwright.md       | convert cypress to playwright tests |
+| postman-to-plawright           | converts postman scripts to playwright tests |
+| network latency                |    |
 
+---
+
+# 10. Troubleshooting
+Authentication Issues
+
+Check:
+
+PAT variable exists
+Variable group linked correctly
+Repo permissions configured
+Pipeline Failures
+
+Check:
+
+Node version
+Playwright browser installation
+YAML pipeline references
+
+---
+
+# 11. Support
+
+For support or enhancement requests:
+
+Raise a Test Capability request
+Contact the Test Capability team
+Refer to governance and onboarding documentation
  
 
 
