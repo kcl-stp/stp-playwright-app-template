@@ -20,11 +20,32 @@ steps:
 - script: npm run test:smoke
   displayName: "Run smoke tests"
 
+- script: |
+    echo "Current directory:"
+    pwd
+
+    echo "Files/folders:"
+    ls -la
+
+    echo "Looking for Playwright reports:"
+    find . -maxdepth 4 -type d -name "playwright-report"
+  displayName: "Debug report output"
+
 - task: PublishTestResults@2
   condition: always()
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: 'test-results/**/*.xml'
+
+- task: PublishTestResults@2
+  displayName: 'Publish Playwright test results to ADO'
+  condition: always()
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'test-results/playwright-results.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    failTaskOnFailedTests: true
+    testRunTitle: 'CI - Playwright Regression Tests'
 
 - task: PublishBuildArtifacts@1
   condition: always()
