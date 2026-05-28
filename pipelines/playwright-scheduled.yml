@@ -22,4 +22,14 @@ steps:
 
   - script: npx playwright test
     displayName: Run tests
+
+  - task: PublishTestResults@2
+    displayName: 'Publish Playwright test results to ADO'
+    condition: always()
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: 'test-results/playwright-results.xml'
+      searchFolder: '$(System.DefaultWorkingDirectory)'
+      failTaskOnFailedTests: true
+      testRunTitle: 'scheduled run - Playwright Tests'
     
