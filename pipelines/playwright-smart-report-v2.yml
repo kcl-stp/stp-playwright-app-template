@@ -6,12 +6,11 @@ schedules:
       - poc-pw-smart-report
   always: true   # REQUIRED for scheduled runs with no code changes
 
-
 pool:
   vmImage: ubuntu-latest
 
 container: 
-  image: mcr.microsoft.com/playwright:v1.57.0-noble 
+  image: mcr.microsoft.com/playwright:v1.60.0-noble 
   env: 
     PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
     # FIX 1: Pass the BuildID so the config can generate unique Run IDs

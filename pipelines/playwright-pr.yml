@@ -23,4 +23,14 @@ steps:
 
 - script: npm run test:smoke
   displayName: "Run smoke tests"
-  
+
+- task: PublishTestResults@2
+  displayName: 'Publish Playwright test results to ADO'
+  condition: always()
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'test-results/playwright-results.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    failTaskOnFailedTests: true
+    testRunTitle: 'PR Validation - Playwright Smoke Tests'
+ 

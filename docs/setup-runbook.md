@@ -1,4 +1,4 @@
-# ⚙️ STP Setup Runbook & Checklist (Playwright App Starter Pack)
+# ⚙️ Setup Runbook & Checklist (Playwright App Starter Pack)
 
 ## 📌 Purpose
 

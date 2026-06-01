@@ -1,4 +1,4 @@
-# 🚀 STP Playwright App Starter Pack
+# 🚀 TC Playwright App Starter Pack
 
 ## What is this?
 
